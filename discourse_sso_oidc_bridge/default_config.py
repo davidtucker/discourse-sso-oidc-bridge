@@ -96,3 +96,10 @@ class DefaultConfig(object):
     # }
     # """
     DEFAULT_SSO_ATTRIBUTES = json.loads(os.environ.get("DEFAULT_SSO_ATTRIBUTES", "{}"))
+    
+    #######################
+    # Flask Configuration #
+    #######################
+    
+    SESSION_TYPE = "filesystem"
+    PERMANENT_SESSION_LIFETIME = 600
